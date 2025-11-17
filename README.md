@@ -1,17 +1,16 @@
 # WatchFlix 🍿
 
-Uma aplicação web para explorar filmes e séries — pesquisar, ver detalhes, favoritar — construída com foco em experiência de usuário, design moderno e responsividade.
+Uma aplicação web para explorar filmes e séries construída com foco em experiência de usuário, design moderno e responsividade.
 
 ## 🎯 Visão Geral  
-O WatchFlix permite que usuários descubram filmes e séries através de uma interface amigável e visualmente atrativa. Inclui funcionalidades como busca, listagem, página de detalhe e opção de guardar favoritos ou assistir depois.
+O WatchFlix permite que usuários descubram filmes e séries através de uma interface amigável e visualmente atrativa página de detalhes, feita com intuito de aprender integração com API´s, e conceitos de componetização e estruturas na criação de projetos.
 
 ## 🧰 Tecnologias Utilizadas  
-- React (ou Vue, Angular — ajuste conforme o que o repositório mostra)  
+- React
 - JavaScript ou TypeScript  
-- CSS3 / Tailwind CSS / Styled Components (estilização responsiva)  
-- API de filmes (ex: TMDB ou similar) para dados de título, sinopse, capa, etc  
-- Gerenciamento de estado (ex: Redux, Context API ou Pinia)  
-- Deploy em plataforma moderna (ex: Vercel, Netlify)
+- CSS3 / Styled Components (estilização responsiva)  
+- API de filmes TMDB  para dados de título, sinopse, capa, etc   
+- Deploy em plataforma moderna Vercel
 
 ## 📂 Estrutura do Projeto  
 /
