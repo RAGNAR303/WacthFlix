@@ -1,16 +1,66 @@
-# React + Vite
+# WatchFlix 🍿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação web para explorar filmes e séries construída com foco em experiência de usuário, design moderno e responsividade.
 
-Currently, two official plugins are available:
+## 🎯 Visão Geral  
+O WatchFlix permite que usuários descubram filmes e séries através de uma interface amigável e visualmente atrativa página de detalhes, feita com intuito de aprender integração com API´s, e conceitos de componetização e estruturas na criação de projetos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧰 Tecnologias Utilizadas  
+- React
+- JavaScript ou TypeScript  
+- CSS3 / Styled Components (estilização responsiva)  
+- API de filmes TMDB  para dados de título, sinopse, capa, etc   
+- Deploy em plataforma moderna Vercel
 
-## React Compiler
+## 📂 Estrutura do Projeto  
+/
+├── public/ # arquivos públicos (imagens, ícones, html estático)
+├── src/ # código-fonte da aplicação
+│ ├── components/ # componentes reutilizáveis (cards de filme, header, etc)
+│ ├── pages/ # páginas da aplicação (home, detalhe, favoritos)
+│ ├── services/ # chamadas à API de filmes
+│ ├── styles/ # arquivos de estilo global ou utilitários
+│ └── … # outras pastas conforme a arquitetura
+├── package.json # dependências e scripts
+├── README.md # esta documentação
+└── … # arquivos de config, licenças, etc
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✅ Funcionalidades Principais
 
-## Expanding the ESLint configuration
+- Listagem de títulos com imagens de capa
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Página de detalhe com sinopse, trailer, avaliação, elenco
+
+- Layout responsivo para desktop e mobile
+
+
+## 🚀 Como Executar Localmente  
+Siga os passos abaixo para rodar o projeto em sua máquina:
+
+```bash
+# 1. Clone o repositório
+git clone https://github.com/RAGNAR303/WacthFlix.git
+
+# 2. Navegue até a pasta do projeto
+cd WacthFlix
+
+# 3. Instale as dependências
+npm install
+# ou
+yarn
+# ou
+pnpm install
+
+# 4. Inicie o servidor de desenvolvimento
+npm run dev
+# ou
+yarn dev
+# ou
+pnpm dev
+
+```
+👤 Créditos
+
+Desenvolvido por RAGNAR303 / Thiago — inspirado por apps de streaming, criado com proposta acadêmica, feita baseado em aulas do Rodolfo Mori do Dev club
+
+
