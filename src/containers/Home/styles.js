@@ -52,6 +52,7 @@ export const Info = styled.div`
 
   p {
     font-size: 1rem;
+    font-weight: 600;
   }
 
   @media screen and (max-width: 768px) {
@@ -62,11 +63,12 @@ export const Info = styled.div`
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
     p {
       font-size: 1rem;
+      font-weight: 600;
     }
   }
 `;

@@ -29,8 +29,11 @@ export const Container = styled.div`
 
   @media screen and (max-width: 768px) {
     img {
-      width: 150px;
-      height: 230px;
+      width: 130px;
+      height: 200px;
+    }
+    p {
+      font-weight: 600;
     }
   }
 `;

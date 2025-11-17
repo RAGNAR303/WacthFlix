@@ -38,8 +38,20 @@ export const Container = styled.div`
     font-weight: 900;
   }
 
-  div{
-     color: #fff;
-     font-size: 2rem;
+  div {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      width: 150px;
+      height: 100px;
+    }
+
+    button {
+      top: -100px;
+      right: -100px;
+    }
   }
 `;

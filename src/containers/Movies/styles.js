@@ -62,11 +62,12 @@ export const Info = styled.div`
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
     p {
       font-size: 1rem;
+      font-weight: 600;
     }
   }
 `;

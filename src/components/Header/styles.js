@@ -19,7 +19,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 768px) {
     & {
-      backdrop-filter: ${(props) => (props.open ? "blur(10px)" : "")};
+      backdrop-filter: ${(props) => (props.open ? "blur(10px)" : "0")};
       background: ${(props) => (props.open ? "#000b17da" : "")};
     }
 
@@ -51,10 +51,13 @@ export const LogoContainer = styled.div`
   }
   @media screen and (max-width: 768px) {
     h1 {
-      font-size: 2rem;
+
+      font-size: 1.5rem;
+      margin-top: 5px;
     }
     img {
-      width: 50px;
+      width: 40px;
+      padding-top: 10px;
     }
   }
 `;
@@ -78,7 +81,6 @@ export const Li = styled.li`
   font-weight: 900;
   padding: 3px 20px;
   transition: all 1000ms ease-in-out;
-  border: ${(props) => (props.$isActive ? "2px solid #d5d5d5ff " : "")};
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -108,6 +110,8 @@ export const ContainerMobile = styled.div`
   width: 100%;
   margin-top: 60px;
   padding: 20px 0;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 20px 30px #0c0c0cff;
 `;
 
 export const MenuBobile = styled.ul`
