@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../../assets/playLogo.png";
+import Logo from "../../assets/playlogo.png";
 import {
   Container,
   Li,

@@ -3,7 +3,7 @@ export function getImagens(path) {
 }
 
 export function getVideos(video) {
-  console.log(video);
+
 
   return `https://www.youtube.com/embed/${video}`;
 }

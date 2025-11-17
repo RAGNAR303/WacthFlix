@@ -30,7 +30,6 @@ export function Series() {
   // mostra o modal quando clicado no botão
   const [showModal, setShowModal] = useState(false);
 
-console.log(onTheAir)
 
   const navigate = useNavigate();
 

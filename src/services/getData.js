@@ -121,11 +121,3 @@ export async function getSeriesVideos(SeriesId) {
 
   return results;
 }
-
-// https://api.themoviedb.org/3/movie/{movie_id}
-
-// https://api.themoviedb.org/3/tv/{series_id}
-
-// https://api.themoviedb.org/3/movie/{movie_id}/videos
-
-// https://api.themoviedb.org/3/tv/{series_id}/videos
