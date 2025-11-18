@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 450px;
+  height: 500px;
   overflow-x: hidden;
   h2 {
     font-size: 2.5rem;
