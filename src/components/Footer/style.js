@@ -29,27 +29,28 @@ export const FooterContainer = styled.footer`
   @media screen and (max-width: 768px) {
     justify-content: center;
     gap: 30px;
+    flex-direction: column;
   }
 `;
 
 export const LogoContainer = styled.div`
-  display: block;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  display: inline-block;
 
   img {
-    width: 70px;
+    width: 50px;
   }
 
   h1 {
     color: #ff3d00;
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 2px;
     text-shadow: 0 0 4px #b10000ff;
     text-transform: uppercase;
   }
   @media screen and (max-width: 768px) {
+    display: flex;
+    width: 100%;
+
     h1 {
       font-size: 1.5rem;
       margin-top: 5px;

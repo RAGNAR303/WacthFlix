@@ -9,10 +9,20 @@ export const Container = styled.div`
   position: relative;
   overflow: visible;
 
+  div {
+    position: relative;
+  }
+
   img {
     width: 200px;
     height: 300px;
     border-radius: 5px;
+    transition: all 300ms ease-in-out;
+    object-fit: cover;
+  }
+
+  img:hover {
+    transform: scale(1.05);
   }
 
   p {
@@ -20,10 +30,7 @@ export const Container = styled.div`
   }
 
   &:hover {
-    transform: scale(1.03);
     background: #000b17ff;
-    height: 105%;
-    padding: 5px;
     border-radius: 10px;
   }
 
