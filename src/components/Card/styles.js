@@ -11,18 +11,19 @@ export const Container = styled.div`
 
   div {
     position: relative;
+    transition: all 300ms ease-in-out;
+    
+  }
+
+  div:hover {
+    transform: scale(1.05);
   }
 
   img {
     width: 200px;
     height: 300px;
     border-radius: 5px;
-    transition: all 300ms ease-in-out;
     object-fit: cover;
-  }
-
-  img:hover {
-    transform: scale(1.05);
   }
 
   p {
