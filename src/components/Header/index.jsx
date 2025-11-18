@@ -59,7 +59,7 @@ function Header() {
       </Container>
       {open && (
         <ContainerMobile>
-          <MenuBobile>
+          <MenuBobile onClick={() => setOpen(false)}>
             <Li $isActive={pathname === "/"}>
               <Link to={"/"}>Home</Link>
             </Li>

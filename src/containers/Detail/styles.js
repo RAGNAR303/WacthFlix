@@ -29,6 +29,11 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  article {
+    font-weight: 800;
+    text-align: center;
+  }
 `;
 
 export const Cover = styled.div`
@@ -69,6 +74,10 @@ export const Info = styled.div`
       width: 100%;
       text-align: center;
     }
+
+    section {
+      padding: 5px 2px;
+    }
   }
 `;
 
@@ -98,4 +107,8 @@ export const ContainerMovies = styled.div`
       rgba(0, 0, 0, 0.25) 0px 14px 28px,
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
+`;
+
+export const ContainerSlide = styled.div`
+  padding: 10px;
 `;

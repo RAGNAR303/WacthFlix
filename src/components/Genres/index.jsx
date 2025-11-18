@@ -1,3 +1,4 @@
+import { fixedAverages } from "../../utils/getImagens";
 import { Container } from "./styles";
 
 function Genres({ genres, average }) {
@@ -5,7 +6,7 @@ function Genres({ genres, average }) {
     <Container>
       {average && (
         <strong>
-          {Math.max(average).toFixed(1)}/ <p>10</p>
+          {fixedAverages(average)}/ <p>10</p>
         </strong>
       )}
       {genres && genres.map((item) => <span key={item.id}>{item.name}</span>)}

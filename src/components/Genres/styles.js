@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 
   strong {
@@ -19,5 +20,6 @@ export const Container = styled.div`
     border: 2px solid #242e3cc9;
     border-radius: 5px;
     padding: 2px 6px;
+    font-weight: 600;
   }
 `;

@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
-import { Background, Container, Cover, Info, ContainerMovies } from "./styles";
+import {
+  Background,
+  Container,
+  Cover,
+  Info,
+  ContainerMovies,
+  ContainerSlide,
+} from "./styles";
 import {
   getMovieCredits,
   getMovieDetails,
@@ -18,6 +25,8 @@ function Detail() {
   const [movieSimilar, setMovieSimilar] = useState();
   const [movieVideos, setMovieVideos] = useState();
   const { id } = useParams();
+
+  console.log(movieDetails);
 
   useEffect(() => {
     async function getAllData() {
@@ -49,10 +58,14 @@ function Detail() {
           <Background $image={getImagens(movieDetails.backdrop_path)} />
           <Container>
             <Cover>
-              <img
-                src={getImagens(movieDetails.poster_path)}
-                alt={movieDetails.title}
-              />
+              {movieDetails.poster_path ? (
+                <img
+                  src={getImagens(movieDetails.poster_path)}
+                  alt={movieDetails.title}
+                />
+              ) : (
+                <article>Nenhuma imagem disponivel :(</article>
+              )}
             </Cover>
 
             <Info>
@@ -65,11 +78,13 @@ function Detail() {
                 average={movieDetails.vote_average}
               />
               <section>
-                <p>{movieDetails.overview}</p>
+                {movieDetails.overview ? (
+                  <p>{movieDetails.overview}</p>
+                ) : (
+                  <article>Nenhuma sinopse disponivel :(</article>
+                )}
               </section>
-              <>
-                {movieCredits && <Credits credits={movieCredits}></Credits>}
-              </>
+              <>{movieCredits && <Credits credits={movieCredits}></Credits>}</>
             </Info>
           </Container>
           <ContainerMovies>
@@ -84,10 +99,11 @@ function Detail() {
                 </div>
               ))}
           </ContainerMovies>
-
-          {movieSimilar && (
-            <Slider title={"Filmes Similares"} info={movieSimilar} />
-          )}
+          <ContainerSlide>
+            {movieSimilar && (
+              <Slider title={"Filmes Similares"} info={movieSimilar} />
+            )}
+          </ContainerSlide>
         </>
       )}
     </div>
